@@ -1,0 +1,13 @@
+:root {
+  --dark-background: #043873;
+  --light-background: #4F9CF9;
+  --general-light: #FFFFFF;
+  --general-dark: #000000;
+  --empty-card-background: #C4DEFD;
+  --accent-button-background: #FFE492;
+}
+
+.header {
+  background-color: var(--dark-background);
+  color: var(--general-light);
+}
