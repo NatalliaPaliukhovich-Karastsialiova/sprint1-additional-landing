@@ -1,224 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="fonts/fonts.css">
-  <link rel="stylesheet" href="styles/global.css">
-  <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-  <header class="header">
-    <a class="header__logo">
-      <img class="header__logo-image" href="logo">
-    </a>
-    <nav class="header__menu">
-      <ul class="header__links-list">
-        <li class="header__links-list-item">
-          <a>Products</a>
-        </li>
-        <li class="header__links-list-item">
-          <a>Solutions</a>
-        </li>
-        <li class="header__links-list-item">
-          <a>Resources</a>
-        </li>
-        <li class="header__links-list-item">
-          <a>Pricing</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="header_buttons">
-      <button class="btn light-theme">Login</button>
-      <button class="btn dark-theme">Try Whitepace free</button>
-    </div>
-  </header>
-  <main class="main">
-    <section class="hero">
-      <div class="hero__text-wrapper text-section">
-        <h1>
-          Get More Done with whitepace
-        </h1>
-        <p>
-          Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks
-        </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header class="header dark-section padding-general">
+      <a class="logo" href="#0">
+        <img class="logo__img" src="images/LogoIcon.svg" alt="logo" />
+        <span class="logo-text"> whitepace </span>
+      </a>
+      <nav class="header__menu">
+        <ul class="header__links-list">
+          <li class="header__links-list-item">
+            <button class="header__menu-btn">
+              Products<span class="menu-icon"></span>
+            </button>
+          </li>
+          <li class="header__links-list-item">
+            <button class="header__menu-btn">
+              Solutions<span class="menu-icon"></span>
+            </button>
+          </li>
+          <li class="header__links-list-item">
+            <button class="header__menu-btn">
+              Resources<span class="menu-icon"></span>
+            </button>
+          </li>
+          <li class="header__links-list-item">
+            <button class="header__menu-btn">
+              Pricing<span class="menu-icon"></span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__buttons">
+        <button class="btn light-theme header__login-btn">Login</button>
         <button class="btn dark-theme">
           Try Whitepace free
+          <span class="btn-icon"></span>
         </button>
       </div>
-      <img class="hero__image">
-    </section>
-    <section class="work-management">
-      <div class="work-management__text-wrapper text-section">
-        <h2>
-          Project Management
+    </header>
+    <main class="main">
+      <section class="hero dark-section padding-general flex-section">
+        <div class="hero__text-wrapper text-section">
+          <h1 class="hero__title">Get More Done with whitepace</h1>
+          <p class="general-paragraph">
+            Project management software that enables your teams to collaborate,
+            plan, analyze and manage everyday tasks
+          </p>
+          <button class="btn dark-theme">
+            Try Whitepace free<span class="btn-icon"></span>
+          </button>
+        </div>
+        <div class="hero__image image-temp"></div>
+      </section>
+      <section class="work-management padding-general">
+        <div class="work-management__text-wrapper text-section">
+          <h2 class="section-title">
+            Project Management
+            <span class="section__title-decoration-light decoration-big"></span>
+          </h2>
+          <p class="general-paragraph">
+            Images, videos, PDFs and audio files are supported. Create math
+            expressions and diagrams directly from the app. Take photos with the
+            mobile app and save them to&nbsp;a&nbsp;note.
+          </p>
+          <button class="btn dark-theme big-padding">
+            Get Started<span class="btn-icon"></span>
+          </button>
+        </div>
+        <div class="work-management__image image-temp"></div>
+        <div class="work-management__diagram"></div>
+        <div class="work-management__text-wrapper text-section padding-text">
+          <h2 class="section-title">
+            Work together
+            <span
+              class="section__title-decoration-light decoration-small"
+            ></span>
+          </h2>
+          <p class="general-paragraph">
+            With whitepace, share your notes with your colleagues and
+            collaborate on them. You can also publish a note to the internet and
+            share the URL with others.
+          </p>
+          <button class="btn dark-theme big-padding">
+            Try it now<span class="btn-icon"></span>
+          </button>
+        </div>
+      </section>
+      <section class="use-extension dark-section padding-general flex-section">
+        <div class="use-extension__text-wrapper text-section">
+          <h2 class="section-title">
+            Use as Extension
+            <span
+              class="section__title-decoration-light decoration-small"
+            ></span>
+          </h2>
+          <p class="general-paragraph">
+            Use the web clipper extension, available on Chrome and Firefox, to
+            save web pages or take screenshots as notes.
+          </p>
+          <button class="btn dark-theme big-padding">
+            Let's Go<span class="btn-icon"></span>
+          </button>
+        </div>
+        <div class="use-extension__image image-temp"></div>
+      </section>
+      <section class="customized-section padding-general flex-section">
+        <div class="customized-section__image image-temp"></div>
+        <div class="customized-section__text-wrapper text-section">
+          <h2 class="section-title">
+            Customise it to your needs
+            <span class="section__title-decoration-light decoration-big"></span>
+          </h2>
+          <p class="general-paragraph">
+            Customise the app with plugins, custom themes and multiple text
+            editors (Rich Text or Markdown). Or create your own scripts and
+            plugins using the Extension API.
+          </p>
+          <button class="btn dark-theme big-padding">
+            Let’s Go<span class="btn-icon"></span>
+          </button>
+        </div>
+      </section>
+      <section class="pricing padding-general flex-section">
+        <div class="pricing-section__text-wrapper text-section">
+          <h2 class="section-title">
+            Choose Your Plan
+            <span
+              class="section__title-decoration-light decoration-small"
+            ></span>
+          </h2>
+          <p class="general-paragraph">
+            Whether you want to get organized, keep your personal life on track,
+            or boost workplace productivity, Evernote has the right plan for
+            you.
+          </p>
+        </div>
+        <div class="pricing__plans-list">
+          <div class="plan-card">
+            <h5 class="plan-card__name">Free</h5>
+            <h6 class="plan-card__price">$0</h6>
+            <p class="plan-card__list-name">
+              Capture ideas and find them quickly
+            </p>
+            <ul class="plan-card__list">
+              <li>Sync unlimited devices</li>
+              <li>10 GB monthly uploads</li>
+              <li>200 MB max. note size</li>
+              <li>Customize Home dashboard and access extra widgets</li>
+              <li>Connect primary Google Calendar account</li>
+              <li>Add due dates, reminders, and notifications to your tasks</li>
+            </ul>
+            <button class="pricing-btn btn dark-theme big-padding">
+              Get Started
+            </button>
+          </div>
+          <div class="plan-card accent-card">
+            <h5 class="plan-card__name">Personal</h5>
+            <h6 class="plan-card__price">$11.99</h6>
+            <p class="plan-card__list-name">Keep home and family on track</p>
+            <ul class="plan-card__list">
+              <li>Sync unlimited devices</li>
+              <li>10 GB monthly uploads</li>
+              <li>200 MB max. note size</li>
+              <li>Customize Home dashboard and access extra widgets</li>
+              <li>Connect primary Google Calendar account</li>
+              <li>Add due dates, reminders, and notifications to your tasks</li>
+            </ul>
+            <button class="pricing-btn btn dark-theme big-padding">
+              Get Started
+            </button>
+          </div>
+          <div class="plan-card">
+            <h5 class="plan-card__name">Organization</h5>
+            <h6 class="plan-card__price">$49.99</h6>
+            <p class="plan-card__list-name">
+              Capture ideas and find them quickly
+            </p>
+            <ul class="plan-card__list">
+              <li>Sync unlimited devices</li>
+              <li>10 GB monthly uploads</li>
+              <li>200 MB max. note size</li>
+              <li>Customize Home dashboard and access extra widgets</li>
+              <li>Connect primary Google Calendar account</li>
+              <li>Add due dates, reminders, and notifications to your tasks</li>
+            </ul>
+            <button class="pricing-btn btn dark-theme big-padding">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="your-work dark-section padding-general flex-section">
+        <h2 class="section-title">
+          Your work, everywhere you are
+          <span class="section__title-decoration-dark decoration-small"></span>
         </h2>
-        <p>
-          Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note.
+        <p class="general-paragraph">
+          Access your notes from your computer, phone or tablet by synchronising
+          with various services, including whitepace, Dropbox and OneDrive. The
+          app is available on Windows, macOS, Linux, Android and iOS. A terminal
+          app is also available!
         </p>
-        <button class="btn dark-theme">
-          Get Started
+        <button class="btn dark-theme big-padding">
+          Try Taskey<span class="btn-icon"></span>
         </button>
-      </div>
-      <img class="work-management__image">
-      <img class="work-management__diagram">
-      <div class="work-management__text-wrapper text-section">
-        <h2>
-          Work together
+      </section>
+      <section class="your-data padding-general flex-section">
+        <div class="your-data__text-wrapper text-section">
+          <h2 class="section-title">
+            100% your data
+            <span
+              class="section__title-decoration-light decoration-small"
+            ></span>
+          </h2>
+          <p class="general-paragraph">
+            The app is open source and your notes are saved to an open format,
+            so you'll always have access to them. Uses End-To-End Encryption
+            (E2EE) to secure your notes and ensure no-one but yourself can
+            access them.
+          </p>
+          <button class="btn dark-theme big-padding">
+            Read more<span class="btn-icon"></span>
+          </button>
+        </div>
+        <div class="your-data__image"></div>
+      </section>
+      <section class="sponsors padding-general flex-section">
+        <h2 class="section-title">
+          Our sponsors
+          <span class="section__title-decoration-light decoration-big"></span>
         </h2>
-        <p>
-          With whitepace, share your notes with your colleagues and collaborate on them. You can also publish a note to the internet and share the URL with others.
-        </p>
-        <button class="btn dark-theme">
-          Try it now
-        </button>
-      </div>
-    </section>
-    <section class="use-extension">
-      <div class="use-extension__text-wrapper text-section">
-        <h2>
-          Use as Extension
+        <ul class="sponsors-list flex-section">
+          <li class="sponsors__list-item">
+            <a
+              class="sponsor-link sponsor-apple"
+              href="https://www.apple.com/"
+            ></a>
+          </li>
+          <li class="sponsors__list-item">
+            <a
+              class="sponsor-link sponsor-microsoft"
+              href="https://www.microsoft.com/en-us/"
+            ></a>
+          </li>
+          <li class="sponsors__list-item">
+            <a class="sponsor-link sponsor-slack" href="https://slack.com/"></a>
+          </li>
+          <li class="sponsors__list-item">
+            <a
+              class="sponsor-link sponsor-google"
+              href="https://www.google.com/"
+            ></a>
+          </li>
+        </ul>
+      </section>
+      <section class="apps dark-section padding-general flex-section">
+        <div class="apps__image"></div>
+        <div class="apps__text-wrapper text-section padding-text">
+          <h2 class="apps-title section-title">
+            Work with Your Favorite Apps Using whitepace
+          </h2>
+          <p class="general-paragraph">
+            Whitepace teams up with your favorite software. Integrate with over
+            1000+ apps with Zapier to have all the tools you need for your
+            project success.
+          </p>
+          <button class="btn dark-theme big-padding">
+            Read more<span class="btn-icon"></span>
+          </button>
+        </div>
+      </section>
+      <section class="feedbacks padding-general flex-section">
+        <h2 class="feedbacks-title section-title">
+          What Our Clients Says
+          <span class="section__title-decoration-light decoration-big"></span>
         </h2>
-        <p>
-          Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.
+        <ul class="feedbacks__list">
+          <li class="feedbacks__list-item">
+            <a class="feedback theme-light">
+              <p class="feedback__text">
+                Whitepate is designed as a collaboration tool
+                for&nbsp;businesses that is a full project management solution.
+              </p>
+              <hr class="feedback__divider divider-dark" />
+              <div class="feedback__personal-data flex-section">
+                <img
+                  class="feedback__personal-data__photo"
+                  alt="photo"
+                  src="images/Avater.png"
+                />
+                <div class="feedback__personal-data__text-wrapper">
+                  <h6 class="feedback__personal-data__name">
+                    Oberon Shaw, MCH
+                  </h6>
+                  <p class="feedback__personal-data__position">
+                    Head of Talent Acquisition, North America
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="feedbacks__list-item">
+            <a class="feedback theme-dark">
+              <p class="feedback__text">
+                Whitepate is designed as a collaboration tool
+                for&nbsp;businesses that is a full project management solution.
+              </p>
+              <hr class="feedback__divider divider-light" />
+              <div class="feedback__personal-data flex-section">
+                <img
+                  class="feedback__personal-data__photo"
+                  alt="photo"
+                  src="images/Avater-1.png"
+                />
+                <div class="feedback__personal-data__text-wrapper">
+                  <h6 class="feedback__personal-data__name name-dark">
+                    Oberon Shaw, MCH
+                  </h6>
+                  <p class="feedback__personal-data__position">
+                    Head of Talent Acquisition, North America
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="feedbacks__list-item">
+            <a class="feedback theme-dark">
+              <p class="feedback__text">
+                Whitepate is designed as a collaboration tool
+                for&nbsp;businesses that is a full project management solution.
+              </p>
+              <hr class="feedback__divider divider-light" />
+              <div class="feedback__personal-data flex-section">
+                <img
+                  class="feedback__personal-data__photo"
+                  alt="photo"
+                  src="images/Avater-2.png"
+                />
+                <div class="feedback__personal-data__text-wrapper">
+                  <h6 class="feedback__personal-data__name name-dark">
+                    Oberon Shaw, MCH
+                  </h6>
+                  <p class="feedback__personal-data__position">
+                    Head of Talent Acquisition, North America
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="feedback__dots-wrapper">
+          <div class="dot"></div>
+          <div class="dot dot-active"></div>
+          <div class="dot"></div>
+        </div>
+      </section>
+      <section class="trial dark-section padding-general flex-section">
+        <h2 class="section-title">Try Whitepace today</h2>
+        <p class="trial__text">
+          Get started for free.<br />
+          Add your whole team as your needs grow.
         </p>
-        <button class="btn dark-theme">
-          Get Started
+        <button class="trial__btn btn dark-theme">
+          Try Taskey free<span class="btn-icon"></span>
         </button>
-      </div>
-      <img class="use-extension__image">
-    </section>
-    <section class="customised-section">
-      <img class="customised-section__image">
-      <div class="customised-section__text-wrapper text-section">
-        <h2>
-          Customise it to your needs
-        </h2>
-        <p>
-          Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.
-        </p>
-        <button class="btn dark-theme">
-          Let’s Go
-        </button>
-      </div>
-    </section>
-    <section class="pricing">
-      <h2>
-        Choose Your Plan
-      </h2>
-      <p>
-        Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Evernote has the right plan for you.
-      </p>
-      <div class="pricing__plans-list">
-        <div class="plan-card">
-          <!-- TO-DO -->
+        <p class="trial__text">On a big team? Contact sales</p>
+        <ul class="trial-os-list">
+          <li class="os-list__item os-ios"></li>
+          <li class="os-list__item os-windows"></li>
+          <li class="os-list__item os-android"></li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer dark-section padding-general">
+      <div class="footer__menu-row flex-section">
+        <div class="logo__column">
+          <a class="logo" href="#0">
+            <img class="logo__img" src="images/LogoIcon.svg" alt="logo" />
+            <span class="logo-text"> whitepace </span>
+          </a>
+          <p class="logo__column__text">
+            whitepace was created for the new ways we live and work. We make a
+            better workspace around the world
+          </p>
+        </div>
+        <nav class="footer__menu">
+          <div class="footer__menu-item">
+            <h4 class="footer__menu__item-title">Product</h4>
+            <ul class="footer__menu-list">
+              <li><a href="">Overview</a></li>
+              <li><a href="">Pricing</a></li>
+              <li><a href="">Customer stories</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu-item">
+            <h4 class="footer__menu__item-title">Resources</h4>
+            <ul class="footer__menu-list">
+              <li><a href="">Blog</a></li>
+              <li><a href="">Guides & tutorials</a></li>
+              <li><a href="">Help center</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu-item">
+            <h4 class="footer__menu__item-title">Company</h4>
+            <ul class="footer__menu-list">
+              <li><a href="#0">About us</a></li>
+              <li><a href="#0">Careers</a></li>
+              <li><a href="#0">Media kit</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="try-it">
+          <h6 class="try-it__title">Try It Today</h6>
+          <p class="try-it__paragraph">
+            Get started for free.Add your whole team as your needs grow.
+          </p>
+          <button class="try-it__btn btn dark-theme">
+            Start today<span class="btn-icon"></span>
+          </button>
         </div>
       </div>
-    </section>
-    <section class="your-work">
-      <h2>
-        Your work, everywhere you are
-      </h2>
-      <p>
-        Access your notes from your computer, phone or tablet by synchronising with various services, including whitepace, Dropbox and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. A terminal app is also available!
-      </p>
-      <button class="btn dark-theme">
-        Try Taskey
-      </button>
-    </section>
-    <section class="your-data">
-      <div class="work-management__text-wrapper text-section">
-        <h2>
-          100% your data
-        </h2>
-        <p>
-          The app is open source and your notes are saved to an open format, so you'll always have access to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
-        </p>
-        <button class="btn dark-theme">
-          Read more
-        </button>
+      <hr class="footer__divider" />
+      <div class="terms-and-media flex-section">
+        <div class="terms flex-section">
+          <button class="terms__lang-btn">English</button>
+          <a href="#0">Terms & privacy</a>
+          <a href="#0">Security</a>
+          <a href="#0">Status</a>
+          <a href="#0">©2021 Whitepace LLC.</a>
+        </div>
+        <ul class="media__list flex-section">
+          <li><a href="#0" class="media-link link-fb"></a></li>
+          <li><a href="#0" class="media-link link-twitter"></a></li>
+          <li><a href="#0" class="media-link link-linkedin"></a></li>
+        </ul>
       </div>
-      <img class="your-data__image">
-    </section>
-    <section class="sponsors">
-      <h2>
-        Our sponsors
-      </h2>
-      <ui>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-      </ui>
-    </section>
-    <section class="apps">
-      <img class="apps__image">
-      <div class="apps__text-wrapper text-section">
-        <h2>
-          Work with Your Favorite Apps Using whitepace
-        </h2>
-        <p>
-          Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the tools you need for your project success.
-        </p>
-        <button class="btn dark-theme">
-          Read more
-        </button>
-      </div>
-    </section>
-    <section class="feedbacks">
-      <h2>
-        What Our Clients Says
-      </h2>
-      <ul class="feedbacks__list">
-        <li class="feedbacks__list-item"></li>
-        <li class="feedbacks__list-item"></li>
-        <li class="feedbacks__list-item"></li>
-      </ul>
-    </section>
-    <section class="trial">
-      <h2>
-        Try Whitepace today
-      </h2>
-      <p>
-        Get started for free. Add your whole team as your needs grow.
-      </p>
-      <button class="btn dark-theme">
-        Try Taskey free
-      </button>
-      <p>On a big team? Contact sales</p>
-      <ul>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-      </ul>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer__menu-item">
-      <h4>Product</h4>
-      <ul>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-      </ul>
-    </div>
-    <div class="footer__menu-item">
-      <h4>Resources</h4>
-      <ul>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-      </ul>
-    </div>
-    <div class="footer__menu-item">
-      <h4>Company</h4>
-      <ul>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-      </ul>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
